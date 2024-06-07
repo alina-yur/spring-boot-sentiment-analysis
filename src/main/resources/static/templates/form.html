@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sentiment Analysis App 🧪👩‍🔬</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body style="font-family: Verdana; color: #333232;">
+    <div class="container">
+        <h2 style="text-align: center;">Hello!🙋‍♀️</h2>
+        <h3 style="text-align: center;">Provide your input for the analysis.</h3>   
+        <form action="/analyse" method="post">
+            <div class="input_wrap">
+                <label for="user_input">Your text goes here:</label>
+                <input type="text" name="user_input">
+            </div>
+            <button type="submit" class="btn">Evaluate!</button>
+        </form>
+    </div>
+</body>
+</html>
