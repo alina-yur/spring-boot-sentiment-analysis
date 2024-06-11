@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Analysis</title>
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: Verdana; color: #1f1f1f;">
-    <h2>Here is the evaluation of your text:</h2>    
-    <p th:text="${sentiment_analysis}"></p>
+<body style="font-family: Verdana; color: #333232;">
+    <div class="container">
+        <h2 style="text-align: center;">Sentiment Analysis Result</h2>
+        <p th:text="'Analysis: ' + ${sentiment_analysis}"></p>
+        <a href="/">Try another analysis</a>
+    </div>
 </body>
 </html>
