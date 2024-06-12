@@ -25,7 +25,7 @@
 .input_wrap input {
     width: 100%;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #aaa;
     border-radius: 4px;
     height: auto;
 }
@@ -33,7 +33,7 @@
 .btn {
     font-family: Verdana;
     background-color: transparent;
-    border: 2px solid;
+    border: 1px solid;
     padding: 10px 15px;
     border-radius: .25rem;
     color: #E0218A;
@@ -42,6 +42,7 @@
     cursor: pointer;
     display: block;
     margin: 20px auto 0;
+    margin-left: auto;
 }
 
 .btn:hover {
