@@ -1,4 +1,5 @@
 .container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 380px;
     padding: 60px 20px;
     margin: 0 auto;
@@ -29,14 +30,14 @@
     border: 1px solid;
     padding: 7px 12px;
     border-radius: .25rem;
-    color: #018ED3;
-    border-color: #018ED3;
+    color: #E0218A;
+    border-color: #E0218A;
     margin: 12px auto 0 auto;
     width: calc(100% - 120px);
     float: right;
     cursor: pointer;
 }
 .btn:hover {
-    background: #018ED3;
+    background: #E0218A;
     color: #fff;
 }

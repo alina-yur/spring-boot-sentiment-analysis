@@ -19,9 +19,8 @@ public class SentimentAnalysisController {
     }
 
     @PostMapping("/analysis")
-    public String sentimentAnalysis(@RequestParam String userInput, Model model) {
+    public String sentimentAnalysis(@RequestParam("user_input") String userInput, Model model) {
         String sentimentAnalysis = sentimentAnalysisService.getAnalysis(userInput);
-        System.out.println(sentimentAnalysis);
         model.addAttribute("sentiment_analysis", sentimentAnalysis);
         return "result";
     }
