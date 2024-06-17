@@ -13,7 +13,7 @@ public class SentimentAnalysisController {
     @Autowired
     private SentimentAnalysisService sentimentAnalysisService;
 
-    @GetMapping("/sentiment")
+    @GetMapping("/")
     public String form(Model model) {
         return "form";
     }
