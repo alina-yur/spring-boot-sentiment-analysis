@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Sentiment Analysis App</title>
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h2 style="text-align:center;" >Hello!🦄</h2>
-        <h3 style="text-align:center;">Please provide your input for the analysis 🧐</h3>   
+        <h2 style="text-align:center;">Hello!🦄</h2>
+        <h3 style="text-align:center;">Use AI to get sentiment analysis of any text!</h3>
         <form action="/analysis" method="post">
             <div class="input_wrap">
-                <label for="user_input">Your text goes here:</label>
+                <label for="user_input">Please provide your input:</label>
                 <input type="text" name="user_input" id="user_input">
             </div>
             <button type="submit" class="btn">Evaluate!</button>
         </form>
     </div>
 </body>
+
 </html>

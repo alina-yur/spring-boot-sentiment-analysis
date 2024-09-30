@@ -1,51 +1,82 @@
-.container {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 600px;
-    padding: 60px 20px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
 
-.container form {
-    margin-top: 40px;
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 60px 20px;
+    margin: 60px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .input_wrap {
     width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .input_wrap label {
-    width: 100%;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
-.input_wrap input {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    height: auto;
+.input_wrap input,
+.input_wrap textarea {
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input_wrap input:focus,
+.input_wrap textarea:focus {
+    border-color: #E0218A;
+    outline: none;
 }
 
 .btn {
-    font-family: Verdana;
-    background-color: transparent;
-    border: 1px solid;
-    padding: 10px 15px;
-    border-radius: .25rem;
-    color: #E0218A;
-    border-color: #E0218A;
-    width: auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #E0218A;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1em;
     cursor: pointer;
-    display: block;
-    margin: 20px auto 0;
-    margin-left: auto;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background: #E0218A;
-    color: #fff;
+    background-color: #C71D78;
 }
